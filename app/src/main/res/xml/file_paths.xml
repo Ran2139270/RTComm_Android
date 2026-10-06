@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 仅暴露下载、更新产物与相机临时文件；上传缓存、数据库与其他私有文件绝不通过 Provider 外发。 -->
+    <external-files-path name="downloads" path="downloads/" />
+    <external-files-path name="updates" path="updates/" />
+    <!-- 当 getExternalFilesDir(null) 不可用时代码会回退到 cacheDir，需显式声明回退路径，
+         否则 FileProvider.getUriForFile 会抛 IllegalArgumentException。 -->
+    <cache-path name="downloads_cache" path="downloads/" />
+    <cache-path name="updates_cache" path="updates/" />
+    <!-- 拍照需要给系统相机一个可写的 content URI，只开放 cacheDir/camera/ 这一个子目录。 -->
+    <cache-path name="camera" path="camera/" />
+</paths>

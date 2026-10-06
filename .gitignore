@@ -1,0 +1,20 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# 密钥与本地机密：绝不提交
+*.keystore
+*.jks
+.env
+.env.*
+*.pem
+*.key
+secrets.properties
