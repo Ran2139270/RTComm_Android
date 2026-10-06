@@ -50,6 +50,8 @@ android {
             storePassword = prop("rtcomm.keystorePassword", "RTCOMM_KEYSTORE_PASSWORD", "android")
             keyAlias = prop("rtcomm.keyAlias", "RTCOMM_KEY_ALIAS", "androiddebugkey")
             keyPassword = prop("rtcomm.keyPassword", "RTCOMM_KEY_PASSWORD", "android")
+            enableV1Signing = true
+            enableV2Signing = true
         }
         // 未配置 release keystore 时该配置为空，release 构建回退到 debug 签名（仅用于本地验证）。
         create("rtcommRelease") {
@@ -59,6 +61,8 @@ android {
                 storePassword = optProp("rtcomm.release.storePassword", "RTCOMM_RELEASE_STORE_PASSWORD")
                 keyAlias = optProp("rtcomm.release.keyAlias", "RTCOMM_RELEASE_KEY_ALIAS")
                 keyPassword = optProp("rtcomm.release.keyPassword", "RTCOMM_RELEASE_KEY_PASSWORD")
+                enableV1Signing = true
+                enableV2Signing = true
             }
         }
     }
