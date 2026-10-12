@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- 聊天缓存、认证态和附件均不进入云备份。 -->
+    <exclude domain="root" path="." />
+</full-backup-content>

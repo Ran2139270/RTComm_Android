@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 风驿 · Waft：两道渐弱的风线，托起被风带走的「消息点」。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path
+        android:strokeColor="#FFFFFF" android:strokeWidth="6.2" android:strokeLineCap="round"
+        android:pathData="M33.8,48.3 C46.2,42.6 60.7,42.6 71.9,48.3" />
+    <path
+        android:strokeColor="#FFFFFF" android:strokeAlpha="0.78" android:strokeWidth="6.2" android:strokeLineCap="round"
+        android:pathData="M30.5,64 C45,57.2 63,57.2 76.4,64" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M74.5,41.5 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" />
+</vector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 风驿 · Waft 标志（单色，随 Icon tint 着色）。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path
+        android:strokeColor="#000000" android:strokeWidth="1.38" android:strokeLineCap="round"
+        android:pathData="M7.51,10.73 C10.27,9.47 13.49,9.47 15.98,10.73" />
+    <path
+        android:strokeColor="#000000" android:strokeAlpha="0.78" android:strokeWidth="1.38" android:strokeLineCap="round"
+        android:pathData="M6.78,14.22 C10,12.71 14,12.71 16.98,14.22" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M16.56,9.22 m-1.33,0 a1.33,1.33 0 1,0 2.66,0 a1.33,1.33 0 1,0 -2.66,0" />
+</vector>
