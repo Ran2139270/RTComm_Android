@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">rtcomm</string>
+    <string name="tab_conversations">会话</string>
+    <string name="tab_ai">AI</string>
+    <string name="tab_devices">设备</string>
+    <string name="tab_files">文件</string>
+    <string name="tab_me">我的</string>
+    <string name="notif_channel_messages">新消息</string>
+    <string name="notif_channel_messages_desc">会话新消息提醒</string>
+    <string name="notif_channel_messages_silent">新消息（静音）</string>
+    <string name="notif_channel_messages_silent_desc">关闭通知声音后使用</string>
+    <string name="notif_channel_messages_mute">新消息（静音且不震动）</string>
+    <string name="notif_channel_messages_mute_desc">关闭通知声音与震动后使用</string>
+    <string name="notif_channel_service">实时连接</string>
+    <string name="notif_channel_service_desc">保持实时消息连接的前台服务</string>
+    <string name="notif_new_message_title">新消息</string>
+    <string name="notif_new_message_body">你收到一条新消息</string>
+    <string name="notif_service_title">rtcomm 实时连接</string>
+    <string name="notif_service_text">保持消息实时接收</string>
+
+    <!-- 通用动作词：供各页面按钮/菜单复用，避免同一动作各处硬编码（F-24）。 -->
+    <string name="action_cancel">取消</string>
+    <string name="action_close">关闭</string>
+    <string name="action_save">保存</string>
+    <string name="action_copy">复制</string>
+    <string name="action_retry">重试</string>
+    <string name="action_delete">删除</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_add">添加</string>
+    <string name="action_remove">移除</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_back">返回</string>
+    <string name="action_download">下载</string>
+    <string name="action_send">发送</string>
+
+    <!-- 在线状态。 -->
+    <string name="status_online">在线</string>
+    <string name="status_offline">离线</string>
+
+    <!--
+      FCM 推送配置（不使用 google-services 插件，运行时手动初始化，见 push/FirebaseInit）。
+      默认全部留空 => 推送禁用，App 仍可正常编译运行（消息走 WebSocket + 前台服务）。
+      自建部署若要启用推送，填入 Firebase 项目里 Android 应用的对应值即可：
+        fcm_project_id : Firebase 项目 ID（project_id）
+        fcm_app_id     : Android 应用 ID（mobilesdk_app_id，形如 1:1234567890:android:abc...）
+        fcm_api_key    : Web/Android API Key（current_key）
+        fcm_sender_id  : 项目编号（project_number / GCM sender id）
+      服务端亦需配置 FCM 服务账号（见 backend/.env.example 的 FCM_* 项）。
+    -->
+    <string name="fcm_project_id" translatable="false"></string>
+    <string name="fcm_app_id" translatable="false"></string>
+    <string name="fcm_api_key" translatable="false"></string>
+    <string name="fcm_sender_id" translatable="false"></string>
+</resources>
